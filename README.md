@@ -1,5 +1,9 @@
 将ZMXObject类直接导入到工程，让对象继承ZMXObject
+
 调用以下方法获得对象的所有属性
+
 - (NSArray *)getProperties;
+ 
 调用NSKeyedArchiver类的archivedDataWithRootObject方法将对象转化成NSData，无需重写encodeWithCoder方法
+
 调用NSKeyedUnarchiver类的unarchiveObjectWithData将NSData转化成对象，无需重写initWithCoder方法
